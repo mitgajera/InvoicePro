@@ -359,30 +359,6 @@ const AuthForm: React.FC = () => {
       {/* Form */}
       {authMode === 'login' ? renderLoginForm() : renderRegisterForm()}
 
-      {/* Demo credentials for login mode */}
-      {authMode === 'login' && (
-        <div className="mt-6 space-y-4">
-          <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
-            <p className="text-sm text-blue-800 font-medium mb-2">Demo User Credentials:</p>
-            <p className="text-sm text-blue-700">
-              Email: demo@invoicepro.com<br />
-              Password: any password
-            </p>
-          </div>
-
-          <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
-            <div className="flex items-center space-x-2 mb-2">
-              <Shield className="w-4 h-4 text-red-600" />
-              <p className="text-sm text-red-800 font-medium">Admin Access:</p>
-            </div>
-            <p className="text-sm text-red-700">
-              Email: admin@invoicepro.com<br />
-              Password: admin123
-            </p>
-          </div>
-        </div>
-      )}
-
       {/* Toggle between login and register */}
       <div className="mt-6 text-center">
         <p className="text-gray-600">
